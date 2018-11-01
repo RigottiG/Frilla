@@ -1,0 +1,36 @@
+<div class="containter">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="overview">
+                <div class="template-card">
+                    <div class="name">
+                        <h2 class="h2-size">{{frilla.titulo}}</h2>
+                        <hr>
+                        <img src="{{frilla.foto}}" class="image-test">
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview">
+                <div class="about-card">
+                    <div class="name">
+                        <h2 class="h2-size">Sobre o frilla</h2>
+                        <hr>
+                        <h4> {{frilla.sobre}} </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="overview">
+            <div class="order-card">
+                <div class="name">
+                    <h3>R${{ frilla.preco }} Detalhes da contratação</h3>
+                    <a href="/contratar/contratar_frilla/{{frilla._id}}" class="btn btn-success btn-lg">Contratar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

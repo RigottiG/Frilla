@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="overview">
+                <div class="contratar-frilla-card">
+                    <div class="margin-both">
+                        <h2 class="text-center">Resumo da contratação</h2>
+                        <hr>
+                        <div class="inner">
+                            <img src="{{frilla.foto}}" class="img-circle">
+                            <br>
+                            <p class="text-center">{{frilla.titulo}}</p>
+                        </div>
+                        <hr>
+                        <div class="input-group promocode">
+                            <input type="text" class="form-control" name="promocode" placeholder="Cupom de desconto" id="promocode">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-block" id="promocodeBtn">Aplicar</button>
+                            </span>
+                            <p class="text-center" id="promocodeRes"></p>
+                        </div>
+
+                        <hr>
+                        <div class="space-between">
+                            <h4><span>Subtotal: </span><span class="dollar fee">R${{frilla.preco}}</span></h4>
+                        </div>
+                        <hr>
+
+                        <hr>
+                        <div class="space-between">
+                            <h4><span>Taxa: </span><span class="dollar fee">R$2,15</span></h4>
+                        </div>
+                        <hr>
+
+                        <hr>
+                        <div class="space-between">
+                            <h3><span>Total: </span><span class="dollar fee">R${{precoTotal}}</span></h3>
+                        </div>
+                        <hr>
+
+                        <a href="/pagamento" class="btn btn-success btn-lg proceed-btn">Prosseguir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

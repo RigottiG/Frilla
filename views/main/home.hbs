@@ -1,0 +1,32 @@
+<div class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="hero-heading">
+				Service for lean entrepreneur <br/>
+				Find it on Threely.
+				<p>Browse. Buy. Done. </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container section">
+	<h1>
+		Novos Frillas
+	</h1>
+	<div class="row">
+		{{#each frillas}}
+		<div class="col-md-3">
+			<div class="frilla-card">
+				<a href="/servico_detalhes/{{_id}}"><img src="/img/copywrite.jpg"></a>
+				<h4>{{titulo}}</h4>
+				<h3>R${{preco}},00</h3>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</div>
