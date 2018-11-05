@@ -1,0 +1,40 @@
+<div class="app row clearfix">
+    <div class="col-sm-4">
+        <input type="hidden" name="userId" id="userId" value="{{user._id}}">
+        <div class="row">
+            <div class="sidebar right">
+                <div class="overlay">
+                    <div class="profile">
+                        <div class="pic">
+                            <img src="{{contrato.frilla.foto}}">
+                        </div>
+
+                        <div class="info">
+                            <h3 class="title name">{{contrato.frilla.titulo}}</h3>
+                            <p class="bio">{{contrato.frilla.sobre}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="chatbox">
+                <div class="chat-msgs clearfix" id="chatMsgs">
+                    Suas mensagens
+                </div>
+                <div class="compose">
+                    <form action="#" id="enviaMensagem" class="form-group">
+                        <div class="input-group">
+                            <a href="#" class="input-group-addon"><i class="fa fa-plus"></i></a>
+                            <input type="text" name="mensagem" id="mensagem" class="form-control" placeholder="Sua mensagem">
+                            <a href="#" class="input-group-addon"><i class="fa fa-smile-o"></i></a>
+                            <input type="submit" class="form-control" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
