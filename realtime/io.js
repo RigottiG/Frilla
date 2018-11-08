@@ -1,3 +1,7 @@
+/**Ainda nao implementado
+ * Talves logo mais eu implemente
+ * Ou talvez não
+ */
 const User = require('../models/user');
 
 module.exports = function(io) {
@@ -6,8 +10,5 @@ module.exports = function(io) {
 
     const user = socket.request.user;
     console.log(user.name);
-
-
-
   });
 }
